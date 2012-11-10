@@ -1,0 +1,11 @@
+--- build.xml.orig	2010-04-22 17:42:21.000000000 +0200
++++ build.xml	2010-04-22 17:42:57.000000000 +0200
+@@ -109,7 +109,7 @@
+     <target name="dist" depends="init" description="Build the distribution file for this system">
+ 		<iterate target="all"/>
+         <mkdir dir="dist"/>
+-		<jar jarfile="dist/jinput.jar" compress="true" duplicate="preserve">
++		<jar jarfile="dist/jinput.jar" compress="true" index="true" duplicate="preserve">
+ 			<fileset dir="coreAPI/classes">
+ 				<include name="**/*.class"/>
+ 				<exclude name="**/test/*.class"/>
