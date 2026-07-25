@@ -1,6 +1,6 @@
 %define name	jinput
 %define version	1.1.0
-%define release	%mkrel 1
+%define release 2
 
 Name:		%{name}
 Summary:	Java input API
